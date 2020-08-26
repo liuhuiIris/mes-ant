@@ -214,22 +214,22 @@ export default defineConfig({
             {
               // name: 'exception',
               // icon: 'warning',
-              // path: '/exception',
+              path: '/exception',
               routes: [
                 {
-                  name: '403',
+                  name: 'exception.403',
                   icon: 'smile',
                   path: '/exception/403',
                   component: './exception/403',
                 },
                 {
-                  name: '404',
+                  name: 'exception.404',
                   icon: 'smile',
                   path: '/exception/404',
                   component: './exception/404',
                 },
                 {
-                  name: '500',
+                  name: 'exception.500',
                   icon: 'smile',
                   path: '/exception/500',
                   component: './exception/500',
@@ -239,16 +239,16 @@ export default defineConfig({
             {
               // name: 'account',
               // icon: 'user',
-              // path: '/account',
+              path: '/account',
               routes: [
                 {
-                  name: 'center',
+                  name: 'account.center',
                   icon: 'smile',
                   path: '/account/center',
                   component: './account/center',
                 },
                 {
-                  name: 'settings',
+                  name: 'account.settings',
                   icon: 'smile',
                   path: '/account/settings',
                   component: './account/settings',
