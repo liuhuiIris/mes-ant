@@ -237,9 +237,9 @@ export default defineConfig({
               ],
             },
             {
-              name: 'account',
-              icon: 'user',
-              path: '/account',
+              // name: 'account',
+              // icon: 'user',
+              // path: '/account',
               routes: [
                 {
                   name: 'center',
