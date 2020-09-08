@@ -70,6 +70,36 @@ export default defineConfig({
               redirect: '/dashboard/analysis',
             },
             {
+              path: '/order',
+              name: 'order',
+              icon: 'table',
+              routes: [
+                {
+                  name: 'list',
+                  path: '/order/list',
+                  component: './order/list',
+                },
+                {
+                  name: 'schedule',
+                  path: '/order/schedule',
+                  // component: './order/schedule',
+                },
+                {
+                  name: 'details',
+                  path: '/order/details',
+                  // component: './order/details',
+                  hideInMenu: true,
+                },
+                {
+                  // TODO NEXT VERSION
+                  name: 'analysis',
+                  path: '/order/analysis',
+                  // component: './order/anaylsis',
+                  hideInMenu: true
+                }
+              ],
+            },
+            {
               path: '/dashboard',
               name: 'dashboard',
               icon: 'dashboard',
@@ -159,12 +189,12 @@ export default defineConfig({
                   path: '/list/table-list',
                   component: './list/table-list',
                 },
-                {
-                  name: 'basic-list',
-                  icon: 'smile',
-                  path: '/list/basic-list',
-                  component: './list/basic-list',
-                },
+                // {
+                //   name: 'basic-list',
+                //   icon: 'smile',
+                //   path: '/list/basic-list',
+                //   component: './list/basic-list',
+                // },
                 {
                   name: 'card-list',
                   icon: 'smile',
@@ -212,24 +242,25 @@ export default defineConfig({
               ],
             },
             {
-              // name: 'exception',
-              // icon: 'warning',
+              name: 'exception',
+              icon: 'warning',
               path: '/exception',
+              hideInMenu: true,
               routes: [
                 {
-                  name: 'exception.403',
+                  name: '403',
                   icon: 'smile',
                   path: '/exception/403',
                   component: './exception/403',
                 },
                 {
-                  name: 'exception.404',
+                  name: '404',
                   icon: 'smile',
                   path: '/exception/404',
                   component: './exception/404',
                 },
                 {
-                  name: 'exception.500',
+                  name: '500',
                   icon: 'smile',
                   path: '/exception/500',
                   component: './exception/500',
@@ -237,18 +268,19 @@ export default defineConfig({
               ],
             },
             {
-              // name: 'account',
-              // icon: 'user',
+              name: 'account',
+              icon: 'user',
               path: '/account',
+              hideInMenu: true,
               routes: [
                 {
-                  name: 'account.center',
+                  name: 'center',
                   icon: 'smile',
                   path: '/account/center',
                   component: './account/center',
                 },
                 {
-                  name: 'account.settings',
+                  name: 'settings',
                   icon: 'smile',
                   path: '/account/settings',
                   component: './account/settings',

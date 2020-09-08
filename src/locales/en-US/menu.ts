@@ -49,4 +49,9 @@ export default {
   'menu.editor.flow': 'Flow Editor',
   'menu.editor.mind': 'Mind Editor',
   'menu.editor.koni': 'Koni Editor',
+  'menu.order': 'Order',
+  'menu.order.list': 'Order List',
+  'menu.order.detail': 'Order Detail',
+  'menu.order.schedule': 'Order Schedule',
+  'menu.order.analysis': 'Order Analysis',
 };

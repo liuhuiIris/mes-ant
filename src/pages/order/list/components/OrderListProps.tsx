@@ -1,10 +1,10 @@
 import React, { FC, useEffect } from 'react';
 import moment from 'moment';
 import { Modal, Result, Button, Form, DatePicker, Input, Select } from 'antd';
-import { BasicListItemDataType } from '../data.d';
+import { BasicListItemDataType } from '../data';
 import styles from '../style.less';
 
-interface OperationModalProps {
+interface OrderListProps {
   done: boolean;
   visible: boolean;
   current: Partial<BasicListItemDataType> | undefined;
@@ -19,7 +19,7 @@ const formLayout = {
   wrapperCol: { span: 13 },
 };
 
-const OperationModal: FC<OperationModalProps> = (props) => {
+const OrderList: FC<OrderListProps> = (props) => {
   const [form] = Form.useForm();
   const { done, visible, current, onDone, onCancel, onSubmit } = props;
 
@@ -126,4 +126,4 @@ const OperationModal: FC<OperationModalProps> = (props) => {
   );
 };
 
-export default OperationModal;
+export default OrderList;
